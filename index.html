@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<script src="https://kit.fontawesome.com/ada54cb636.js" crossorigin="anonymous"></script>
+
+<body>
+  <header class="c-acao">
+    <h1 class="c-acao__xd">DM</h1>
+    <p class="nome__dois" id="nome-dois">code</p>
+  </header>
+  <main class="cor-po">
+    <section class="container-general__data-entry">
+      <textarea name="text" cols="30" rows="10" class="corpo-geral__input-area" id="input-area" placeholder= "Digite seu texto"></textarea>
+      <section class="corpo-geral__informacoes-area">
+        <span class="circulo__informacao"><i class="fa-solid fa-circle-info"></i></span>
+        <p class="corpo-geral__paragrafo-area">Apenas letras minúsculas e sem acentos</p>
+      </section>
+      <section class="corpo-geral__servico-buttons">
+        <button class="corpo-geral__servico-buttons__encrypts" id="button-encrypt" onclick="encryptOrDecrypt('encrypt')">
+          Criptografar
+        </button>
+        <button class="corpo-geral__servico-buttons__decrypts" id="button-decrypt" onclick="encryptOrDecrypt('decrypt')">
+          Descriptografar
+        </button>
+      </section>
+    </section>
+    <section class="container-general__data-output">
+      <div class="corpo-geral__output-area" id="output-area">
+        <div class="corpo-geral__center-area" id="hide-area">
+          <img class="corpo-geral__output-area__imagem" src="./assets/img/lupadimond.svg" alt="lupa olhando o diamante">
+        </div>
+        <h2 class="corpo-geral__output-area__titulo__dois" id="hide-area2">
+          Nenhuma mensagem encontrada
+        </h2>
+        <p class="corpor-geral__output-area__paragrafo__tres" id="output-area-text">
+          Digite um texto que você queira criptografar ou descriptografar.
+        </p>
+        <button class="copiarne" id="copyButton" onclick="execCopy()">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="rodape__conteudo-dev">
+      <a class="rodape__conteudo-dev__link" target="_Blank">Desenvolvido por: Davi Melo</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+ </body>
+</html>
